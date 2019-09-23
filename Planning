@@ -1,0 +1,63 @@
+
+
+Classes
+-Window
+  window resizing
+  window moving
+  full screen 
+  //this is all later
+  
+
+-Game Board
+
+-data
+  number of flags
+  number of mines flagged
+  win rates // later
+  time played per game 
+
+-Tile
+  isMine();
+  isEmpty(); //number or blank
+  isRevealed();
+  flagged();
+  draw();
+
+-Mines
+  Boom();
+  isFlagged();
+
+-not Mines
+  adjacentMines();
+  display();
+
+-Menu
+  gameEnd(); //win or lose
+  difficulty(); //later
+  fun stats // later
+  color scheme // later
+    
+
+  
+  
+
+order
+  first make game board
+  then make mines
+  then make safeMine indicators
+  then make win/lose states
+  fun stats
+
+testing
+  Make sure if bomb is clicked == dead 
+  make sure if tile is clicked, its not clickable anymore
+  make sure game ends with all bombs flagged, with no false flags
+  make sure all clicking works
+  number of adjacent bombs is correct
+  when window is closed, make sure it closes
+  make sure things are counting right
+  
+
+
+
+
