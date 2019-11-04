@@ -1,4 +1,4 @@
-ww# MineSweeper
+# MineSweeper
 Minesweeper in C++
 
 Created by Bentley Sayer and Chad Hurst.
