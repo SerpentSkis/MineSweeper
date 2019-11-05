@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		36EE7E2D6C9847C5A85DFC4F /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 83AD58455FB64AACB5FC1A64 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				0DA7FBF64F8F4E75AB2F94FE /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		AE87396EE8D1431E830F586C /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0A3AFFDE0A634C5C92EFCE97 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				5365768C13BC44508F94889D /* CMake Rules */,
+			);
+			dependencies = (
+				A26B3AFC49294220B58DFBFE /* PBXTargetDependency */,
+				DAC8A8F4A2D7422DB2EB9A28 /* PBXTargetDependency */,
+				6A8124E1973E4988A19EFE68 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1D067C7F13BB4973A169FD35 /* GameBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8725B473048719F886D96 /* GameBoard.cpp */; };
+		330AAA320AB5400DAFB2700B /* testing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44C99E1E50014A71B38CCDDE /* testing.cpp */; };
+		3CC08449036B4D0A95700C05 /* tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D13CAED766604C7AA063C280 /* tile.cpp */; };
+		6B8EACE0B52B4406B6378A48 /* GameViews.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06CD725A9B6A4E13B6F98E2F /* GameViews.cpp */; };
+		7AFC4AB70A2E497196716309 /* WinOrLoseScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3301E74427B4460697C219A0 /* WinOrLoseScreen.cpp */; };
+		9B78B16D1C114DB582707348 /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40669192D9F54355AF902620 /* MainMenu.cpp */; };
+		D9EDB0DF8DD449E8AF20EF63 /* DifficultySelector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4771558D0D22464DA66E4594 /* DifficultySelector.cpp */; };
+		E29D6D8E81324901BA71F9A8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE3C36F046BC4DD58D1E9C7B /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B5C7275172F4F93B99C5132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F11C9526143A19D70BB09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36EE7E2D6C9847C5A85DFC4F;
+			remoteInfo = ZERO_CHECK;
+		};
+		30D282C72DBE4F2F8391A0C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F11C9526143A19D70BB09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36EE7E2D6C9847C5A85DFC4F;
+			remoteInfo = ZERO_CHECK;
+		};
+		6D30E0803D594892B33ECD85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F11C9526143A19D70BB09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36EE7E2D6C9847C5A85DFC4F;
+			remoteInfo = ZERO_CHECK;
+		};
+		9D1A37A8BF1D46FFA22548A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F11C9526143A19D70BB09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D95E1A6B0EC8465682BA4292;
+			remoteInfo = MineSweeper;
+		};
+		EC155551377D459CA8AE0876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F11C9526143A19D70BB09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCCDA0E216384A95A63E44F8;
+			remoteInfo = testing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06CD725A9B6A4E13B6F98E2F /* GameViews.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GameViews.cpp; path = src/GameViews.cpp; sourceTree = SOURCE_ROOT; };
+		1759FDEC6665432B948DE50F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2EA8725B473048719F886D96 /* GameBoard.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GameBoard.cpp; path = src/GameBoard.cpp; sourceTree = SOURCE_ROOT; };
+		3301E74427B4460697C219A0 /* WinOrLoseScreen.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = WinOrLoseScreen.cpp; path = src/WinOrLoseScreen.cpp; sourceTree = SOURCE_ROOT; };
+		40669192D9F54355AF902620 /* MainMenu.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MainMenu.cpp; path = src/MainMenu.cpp; sourceTree = SOURCE_ROOT; };
+		44C99E1E50014A71B38CCDDE /* testing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = testing.cpp; path = src/testing.cpp; sourceTree = SOURCE_ROOT; };
+		4771558D0D22464DA66E4594 /* DifficultySelector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DifficultySelector.cpp; path = src/DifficultySelector.cpp; sourceTree = SOURCE_ROOT; };
+		7D405E4DE8D54670BB7ECBCB /* testing.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = testing.hpp; path = src/testing.hpp; sourceTree = SOURCE_ROOT; };
+		81BAD7D59745483C98EEE7CD /* MineSweeper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MineSweeper; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD198E940DB4D9B9C8378D5 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C874CAAF58D04623BDA31E85 /* testing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = testing; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB974B93C05479DB43F7241 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D13CAED766604C7AA063C280 /* tile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tile.cpp; path = src/tile.cpp; sourceTree = SOURCE_ROOT; };
+		FE3C36F046BC4DD58D1E9C7B /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2A8F72BB3A4A413399ECAC1C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3EECCC2142554458B2E2F850 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81BAD7D59745483C98EEE7CD /* MineSweeper */,
+				C874CAAF58D04623BDA31E85 /* testing */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5ADD8A8439BF414D829BE4EF /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D405E4DE8D54670BB7ECBCB /* testing.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		8667D3FB3E134470A3912E07 = {
+			isa = PBXGroup;
+			children = (
+				E54BD546413741DB8DBFDC4D /* testing */,
+				D70A6CB145D84FAFAB43ECA1 /* MineSweeper */,
+				96E73D04EFE74BCBB34CC3FA /* ALL_BUILD */,
+				3EECCC2142554458B2E2F850 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90FB0F9953F14223A7FE8027 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				44C99E1E50014A71B38CCDDE /* testing.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		96E73D04EFE74BCBB34CC3FA /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				2A8F72BB3A4A413399ECAC1C /* CMake Rules */,
+				1759FDEC6665432B948DE50F /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		9DD0BFAF0BF8485C9F3F62D7 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4771558D0D22464DA66E4594 /* DifficultySelector.cpp */,
+				2EA8725B473048719F886D96 /* GameBoard.cpp */,
+				06CD725A9B6A4E13B6F98E2F /* GameViews.cpp */,
+				40669192D9F54355AF902620 /* MainMenu.cpp */,
+				3301E74427B4460697C219A0 /* WinOrLoseScreen.cpp */,
+				FE3C36F046BC4DD58D1E9C7B /* main.cpp */,
+				D13CAED766604C7AA063C280 /* tile.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D70A6CB145D84FAFAB43ECA1 /* MineSweeper */ = {
+			isa = PBXGroup;
+			children = (
+				9DD0BFAF0BF8485C9F3F62D7 /* Source Files */,
+				BDD198E940DB4D9B9C8378D5 /* CMakeLists.txt */,
+			);
+			name = MineSweeper;
+			sourceTree = "<group>";
+		};
+		E54BD546413741DB8DBFDC4D /* testing */ = {
+			isa = PBXGroup;
+			children = (
+				90FB0F9953F14223A7FE8027 /* Source Files */,
+				5ADD8A8439BF414D829BE4EF /* Header Files */,
+				CEB974B93C05479DB43F7241 /* CMakeLists.txt */,
+			);
+			name = testing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D95E1A6B0EC8465682BA4292 /* MineSweeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD337713975443C984E227E9 /* Build configuration list for PBXNativeTarget "MineSweeper" */;
+			buildPhases = (
+				02A54D088CB041069B5D2715 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F2E1FA17C744C30B46A6E20 /* PBXTargetDependency */,
+			);
+			name = MineSweeper;
+			productName = MineSweeper;
+			productReference = 81BAD7D59745483C98EEE7CD /* MineSweeper */;
+			productType = "com.apple.product-type.tool";
+		};
+		FCCDA0E216384A95A63E44F8 /* testing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FBB9F44850B47939FE20697 /* Build configuration list for PBXNativeTarget "testing" */;
+			buildPhases = (
+				D630BFB2AAAB4AD5B95135D2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80CD5AEFEF6C4143A67C55C4 /* PBXTargetDependency */,
+			);
+			name = testing;
+			productName = testing;
+			productReference = C874CAAF58D04623BDA31E85 /* testing */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C1F11C9526143A19D70BB09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 7BDBF879CEB2410C97F95A40 /* Build configuration list for PBXProject "MineSweeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8667D3FB3E134470A3912E07;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE87396EE8D1431E830F586C /* ALL_BUILD */,
+				D95E1A6B0EC8465682BA4292 /* MineSweeper */,
+				36EE7E2D6C9847C5A85DFC4F /* ZERO_CHECK */,
+				FCCDA0E216384A95A63E44F8 /* testing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DA7FBF64F8F4E75AB2F94FE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/chadhurst/repo/ChadBentley -f /Users/chadhurst/repo/ChadBentley/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		5365768C13BC44508F94889D /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/chadhurst/repo/ChadBentley -f /Users/chadhurst/repo/ChadBentley/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02A54D088CB041069B5D2715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EDB0DF8DD449E8AF20EF63 /* DifficultySelector.cpp in Sources */,
+				1D067C7F13BB4973A169FD35 /* GameBoard.cpp in Sources */,
+				6B8EACE0B52B4406B6378A48 /* GameViews.cpp in Sources */,
+				9B78B16D1C114DB582707348 /* MainMenu.cpp in Sources */,
+				7AFC4AB70A2E497196716309 /* WinOrLoseScreen.cpp in Sources */,
+				E29D6D8E81324901BA71F9A8 /* main.cpp in Sources */,
+				3CC08449036B4D0A95700C05 /* tile.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D630BFB2AAAB4AD5B95135D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330AAA320AB5400DAFB2700B /* testing.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F2E1FA17C744C30B46A6E20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36EE7E2D6C9847C5A85DFC4F /* ZERO_CHECK */;
+			targetProxy = 6D30E0803D594892B33ECD85 /* PBXContainerItemProxy */;
+		};
+		6A8124E1973E4988A19EFE68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36EE7E2D6C9847C5A85DFC4F /* ZERO_CHECK */;
+			targetProxy = 30D282C72DBE4F2F8391A0C8 /* PBXContainerItemProxy */;
+		};
+		80CD5AEFEF6C4143A67C55C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36EE7E2D6C9847C5A85DFC4F /* ZERO_CHECK */;
+			targetProxy = 2B5C7275172F4F93B99C5132 /* PBXContainerItemProxy */;
+		};
+		A26B3AFC49294220B58DFBFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCCDA0E216384A95A63E44F8 /* testing */;
+			targetProxy = EC155551377D459CA8AE0876 /* PBXContainerItemProxy */;
+		};
+		DAC8A8F4A2D7422DB2EB9A28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D95E1A6B0EC8465682BA4292 /* MineSweeper */;
+			targetProxy = 9D1A37A8BF1D46FFA22548A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015335920BBB43CA949E9997 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Library/Frameworks/.;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=c++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics",
+					"/Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window",
+					"/Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testing;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		015DCB958CE04464987009E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley/build;
+			};
+			name = Debug;
+		};
+		03536BEF8851465484C1D3A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		1AEC6B19F77546BE9E321F01 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		211E3440B4AF4C54BA0D1DF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		38FD72C2B4D54C1AB0478DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		45778FCC508D4C688E27798F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley/build;
+			};
+			name = RelWithDebInfo;
+		};
+		46591D3EEE464179B6CA1B47 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Library/Frameworks/.;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=c++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics",
+					"/Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window",
+					"/Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MineSweeper;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		62CFF28B15A940FE962FE8C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Library/Frameworks/.;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=c++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics",
+					"/Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window",
+					"/Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MineSweeper;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		6633E5EA0BD84A34AAA44A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		820099E6BFE74AC495A8511C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Library/Frameworks/.;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=c++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics",
+					"/Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window",
+					"/Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testing;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8364CF4A5E344551A0113C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Library/Frameworks/.;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=c++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics",
+					"/Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window",
+					"/Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testing;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		85005A6303DF4AE6BD369D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Library/Frameworks/.;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++17'  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics",
+					"/Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window",
+					"/Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MineSweeper;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		897AFAFA12404B3394171BAD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		9C94A54B918A48F3B6357075 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley/build;
+			};
+			name = MinSizeRel;
+		};
+		B2E8EED8D09841588FFC81D8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D4CF54653DCD4E4D9B53057D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley/build;
+			};
+			name = Release;
+		};
+		E12925A9DB3248299AFAA523 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		F20A6F90608D426B8B6AAFF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Library/Frameworks/.;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++17'  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics",
+					"/Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window",
+					"/Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testing;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		F551A76A0A3846D585235F42 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /Library/Frameworks/.;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=c++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Library/Frameworks/./sfml-graphics.framework/Versions/2.5.1/sfml-graphics",
+					"/Library/Frameworks/./sfml-window.framework/Versions/2.5.1/sfml-window",
+					"/Library/Frameworks/./sfml-system.framework/Versions/2.5.1/sfml-system",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MineSweeper;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/chadhurst/repo/ChadBentley;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A3AFFDE0A634C5C92EFCE97 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FD72C2B4D54C1AB0478DEB /* Debug */,
+				211E3440B4AF4C54BA0D1DF0 /* Release */,
+				1AEC6B19F77546BE9E321F01 /* MinSizeRel */,
+				B2E8EED8D09841588FFC81D8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1FBB9F44850B47939FE20697 /* Build configuration list for PBXNativeTarget "testing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20A6F90608D426B8B6AAFF9 /* Debug */,
+				8364CF4A5E344551A0113C13 /* Release */,
+				015335920BBB43CA949E9997 /* MinSizeRel */,
+				820099E6BFE74AC495A8511C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7BDBF879CEB2410C97F95A40 /* Build configuration list for PBXProject "MineSweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015DCB958CE04464987009E2 /* Debug */,
+				D4CF54653DCD4E4D9B53057D /* Release */,
+				9C94A54B918A48F3B6357075 /* MinSizeRel */,
+				45778FCC508D4C688E27798F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83AD58455FB64AACB5FC1A64 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03536BEF8851465484C1D3A2 /* Debug */,
+				6633E5EA0BD84A34AAA44A6B /* Release */,
+				897AFAFA12404B3394171BAD /* MinSizeRel */,
+				E12925A9DB3248299AFAA523 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BD337713975443C984E227E9 /* Build configuration list for PBXNativeTarget "MineSweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85005A6303DF4AE6BD369D15 /* Debug */,
+				62CFF28B15A940FE962FE8C8 /* Release */,
+				F551A76A0A3846D585235F42 /* MinSizeRel */,
+				46591D3EEE464179B6CA1B47 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C1F11C9526143A19D70BB09 /* Project object */;
+}
