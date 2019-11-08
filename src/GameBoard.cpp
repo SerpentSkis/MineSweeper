@@ -39,7 +39,6 @@ void GameBoard::shuffle() {
 //very similar to blur picture project
 void GameBoard::adjacentBombsPopulate() {
     shuffle();
-    shuffle();
     for (int i = 0; i < columns * rows; i++) {
 
         bool left = 1, right = 1, top = 1, bottom = 1;

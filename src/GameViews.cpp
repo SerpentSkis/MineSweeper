@@ -42,22 +42,16 @@ void createGameView(int Rows, int Columns, int NumBombs) {
     GameBoard gameBoard = GameBoard(Rows, Columns, NumBombs, unClickedSquareTexture, window);
 
     window.create(sf::VideoMode(static_cast<unsigned int>(32 * gameBoard.getRows()), static_cast<unsigned int>(32 * gameBoard.getColumns())), "MineSweeper", sf::Style::Close | sf::Style::Resize);
-    //    sf::Vector2<unsigned> gameSize(gameBoard.getColumns() * 32, gameBoard.getRows() * 32);
-    // window.setSize(gameSize);
-    // draw the gameBoard;
 
     // run the program as long as the window is open
-
     window.setVerticalSyncEnabled(true);
     window.setFramerateLimit(30);
-
     while (window.isOpen()) {
         // check all the window's events that were triggered since the last iteration of the loop
 
         // clear the window with black color
         window.clear();
         gameBoard.draw();
-
 
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -167,22 +161,16 @@ void createGameView(int Rows, int Columns, int NumBombs) {
                         gameBoard.flagsPlaced--;
                     }
                 }
-
             }
-
         }
-
-
         window.display();
-
-
     }
-
 }
 
 
-/**creates a main menu, can change difficulty and layout.**/
-
+/**
+* creates a main menu, can change difficulty and layout.
+**/
 void createMainMenu() {
     sf::RenderWindow window(sf::VideoMode(500, 500), "MineSweeper", sf::Style::Close | sf::Style::Resize);
 
@@ -190,13 +178,8 @@ void createMainMenu() {
     window.create((sf::VideoMode(500, 500)), "MineSweeper", sf::Style::Close | sf::Style::Resize);
     window.setVerticalSyncEnabled(true);
     window.setFramerateLimit(30);
-
-
     while (window.isOpen()) {
-
-
         // clear the window with black color
-
         window.clear();
         menu.draw(window);
 
@@ -227,22 +210,20 @@ void createMainMenu() {
                         case 2:
                             window.close();
                             break;
-
-
                         default:
                             break;
                     }
                 }
             }
-
-
         }
         window.display();
     }
 }
 
 
-/** Creates a Menu to change the games difficulty.**/
+/**
+* Creates a Menu to change the games difficulty.
+* **/
 void createDifficultySelector() {
     sf::RenderWindow window(sf::VideoMode(500, 500), "MineSweeper", sf::Style::Close | sf::Style::Resize);
 
@@ -259,7 +240,6 @@ void createDifficultySelector() {
 
         window.clear();
         menu.draw(window);
-
 
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -292,14 +272,11 @@ void createDifficultySelector() {
                             window.close();
                             createMainMenu();
                             break;
-
-
                         default:
                             break;
                     }
                 }
             }
-
 
         }
         window.display();
@@ -356,8 +333,6 @@ void createWinLoseScreen(std::string Result) {
                     }
                 }
             }
-
-
         }
         window.display();
     }
