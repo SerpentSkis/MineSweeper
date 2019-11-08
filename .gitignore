@@ -1,3 +1,4 @@
+doxygen
 # server stuff
 *.jar
 *.log
@@ -19,7 +20,7 @@ build
 CMakeFiles
 CMakeScripts
 Debug
-
+*.cmake
 # Prerequisites
 *.d
 
