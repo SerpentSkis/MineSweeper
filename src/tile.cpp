@@ -1,36 +1,34 @@
-//
-//  tile.cpp
-//  testSFML
-//
-//  Created by Bentley sayer on 9/16/19.
-//
-
 #include "tile.hpp"
 
-//when a tile is revealed
 void Tile::reveal() {
     isRevealed = true;
 
 }
 
-//flag is placed on tile
 void Tile::flag() {
     isFlagged = true;
 
 }
 
-//called if a bomb is clicked on
 bool Tile::gameLose() {
     return isRevealed && tileInfo == BOMB;
 }
 
 
-/**reveal all the blanks that are touching eachother, Recursive algorithm. **/
+/**
+ * reveal all the blanks that are touching eachother, Recursive algorithm.
+ * @param x
+ * @param y
+ * @param Rows
+ * @param Columns
+ * @param textures
+ * @param gameboardTiles
+ * @param tilesRevealed
+ */
 void Tile::revealSurroundingBlanks(int x, int y, int Rows, int Columns, std::vector<sf::Texture> &textures, std::vector<std::vector<Tile>> &gameboardTiles, int &tilesRevealed) {
 
     if (x > -1 && y > -1 && x < Columns && y < Rows) {
         Tile &temp = gameboardTiles[y][x];
-
 
         if (temp.tileInfo == BLANK && !temp.isRevealed) {
             temp.reveal();

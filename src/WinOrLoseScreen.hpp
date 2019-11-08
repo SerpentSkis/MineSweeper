@@ -1,10 +1,3 @@
-//
-//  WinOrLoseScreen.hpp
-//  MineSweeper
-//
-//  Created by Bentley sayer on 9/19/19.
-//
-
 #pragma once
 
 #include <SFML/Graphics.hpp>

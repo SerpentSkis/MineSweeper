@@ -1,10 +1,3 @@
-//
-//  tile.hpp
-//  testSFML
-//
-//  Created by Bentley sayer on 9/16/19.
-//
-
 #pragma once
 
 #include <iostream>

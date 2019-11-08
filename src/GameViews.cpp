@@ -1,21 +1,9 @@
-//
-//  GameViews.cpp
-//  MineSweeper
-//
-//  Created by Bentley sayer on 9/19/19.
-//
-
 #include <iostream>
-#include <stdio.h>
 #include <SFML/Graphics.hpp>
-#include <vector>
-#include <string>
-#include <ctime>
 #include "GameBoard.hpp"
 #include "MainMenu.hpp"
 #include "DifficultySelector.hpp"
 #include "WinOrLoseScreen.hpp"
-#include "tile.hpp"
 #include "GameViews.hpp"
 
 /** This is the main Game "View" that exists in the game. called from the main menu view**/

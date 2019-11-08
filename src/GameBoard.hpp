@@ -1,10 +1,3 @@
-//
-//  GameBoard.hpp
-//  MineSweeper
-//
-//  Created by Bentley sayer on 9/17/19.
-//
-
 #pragma once
 
 #include <iostream>

@@ -1,10 +1,3 @@
-//
-//  GameBoard.cpp
-//  MineSweeper
-//
-//  Created by Bentley sayer on 9/17/19.
-//
-
 #include "GameBoard.hpp"
 
 void GameBoard::draw() {

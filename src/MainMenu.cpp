@@ -1,9 +1,3 @@
-//
-//  MainMenu.cpp
-//  MineSweeper
-//
-//  Created by Bentley sayer on 9/19/19.
-//
 #include <iostream>
 #include "MainMenu.hpp"
 
