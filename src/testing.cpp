@@ -6,12 +6,14 @@
 //
 
 #define CATCH_CONFIG_MAIN
+
 #include "testing.hpp"
 
 
 TEST_CASE("Testing test"){
-    //GameBoard gameboard = GameBoard();
-    REQUIRE(true); //
-    REQUIRE(BOMB == 9);
+//GameBoard gameboard = GameBoard();
+REQUIRE(true); //
+REQUIRE(BOMB
+== 9);
 //    REQUIRE(GameBoard::totalBombs < 100); //I cant figure out how to test things in classes
 }

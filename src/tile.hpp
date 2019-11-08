@@ -6,13 +6,14 @@
 //
 
 #pragma once
+
 #include <iostream>
 #include <stdio.h>
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <cstdlib>
 
-enum TileInfo{
+enum TileInfo {
     BLANK = 0,
     ONE = 1,
     TWO = 2,
@@ -26,33 +27,37 @@ enum TileInfo{
 };
 
 
-
-struct Tile{
+struct Tile {
 
 public:
-    Tile(sf::Texture& _texture){
-        
+    Tile(sf::Texture &_texture) {
+
         texture = _texture;
         sprite.setTexture(texture);
         isRevealed = false;
     }
-    
-    sf::Sprite& getSprite(){
+
+    sf::Sprite &getSprite() {
         return this->sprite;
     };
-    
+
     bool isFlagged;
     bool isRevealed;
+
     void flag();
+
     void reveal();
+
     TileInfo tileInfo;
+
     bool gameLose(); // return isRevealed and (tileInfo == BOMB);
-    void revealSurroundingBlanks(int x, int y, int Rows, int Columns, std::vector<sf::Texture>& textures, std::vector<std::vector<Tile>>& gameboardTiles, int& tilesRevealed);
+    void revealSurroundingBlanks(int x, int y, int Rows, int Columns, std::vector<sf::Texture> &textures, std::vector<std::vector<Tile>> &gameboardTiles, int &tilesRevealed);
+
 private:
     sf::Sprite sprite;
     sf::Texture texture;
-   
-    
+
+
 };
 
 

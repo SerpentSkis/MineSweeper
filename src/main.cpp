@@ -3,12 +3,9 @@
 #include <vector>
 #include <string>
 #include <ctime>
-#include "GameViews.hpp"
 #include <SFML/Graphics.hpp>
+#include "GameViews.hpp"
 
-int main()
-{
+int main() {
     createMainMenu();
-    
-    return 0;
 }
