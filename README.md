@@ -1,3 +1,3 @@
 # MineSweeper
-Minesweeper in C++ using SFML
+Functional Minesweeper in C++ using SFML
 
