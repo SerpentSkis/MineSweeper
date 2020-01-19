@@ -41,10 +41,8 @@ public:
 
     void visualArrayBuild(sf::Texture &_texture);
 
-    void placeBombs();
-
     bool gameWin();  //  tilesRevealed == rows*columns-totalBombs;
-    int bombsLeft(); //  = totalBombs - flagsPlaced;
+
     int getRows();
 
     int getColumns();

@@ -7,7 +7,6 @@
 #include "GameViews.hpp"
 
 /** This is the main Game "View" that exists in the game. called from the main menu view**/
-
 void createGameView(int Rows, int Columns, int NumBombs) {
     srand(static_cast<unsigned int>(time(NULL)));
 

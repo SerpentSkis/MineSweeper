@@ -6,7 +6,6 @@
 
 #define MAX_NUMBER_OF_ITEMS_END 3
 
-
 struct WinOrLoseScreen {
     WinOrLoseScreen(float width, float height, std::string result);
 
@@ -19,7 +18,6 @@ struct WinOrLoseScreen {
     int getPressedReturn() {
         return selectedItemIndex;
     }
-
 
 private:
     int selectedItemIndex;

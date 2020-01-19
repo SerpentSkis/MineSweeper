@@ -4,8 +4,6 @@
 #include <SFML/Graphics/Text.hpp>
 #include <iostream>
 
-void createGameView();
-
 void createMainMenu();
 
 void createDifficultySelector();

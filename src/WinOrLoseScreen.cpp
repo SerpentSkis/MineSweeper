@@ -2,6 +2,7 @@
 #include "WinOrLoseScreen.hpp"
 
 WinOrLoseScreen::WinOrLoseScreen(float width, float height, std::string result) {
+    //TODO win condition is buggy.
     if (!font.loadFromFile("menuFont.ttf")) {
         //handle error
         std::cout << "couldn't load your font";

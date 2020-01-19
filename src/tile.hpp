@@ -43,18 +43,11 @@ public:
 
     TileInfo tileInfo;
 
-    bool gameLose(); // return isRevealed and (tileInfo == BOMB);
-    void revealSurroundingBlanks(int x, int y, int Rows, int Columns, std::vector<sf::Texture> &textures, std::vector<std::vector<Tile>> &gameboardTiles, int &tilesRevealed);
+    void revealSurroundingBlanks(int x, int y, int Rows, int Columns, std::vector<sf::Texture> &textures, std::vector<std::vector<Tile>> &gameBoardTiles, int &tilesRevealed);
 
 private:
     sf::Sprite sprite;
     sf::Texture texture;
 
-
 };
-
-
-
-
-//I have not tested to make sure this works properly
-        
+//TODO testing

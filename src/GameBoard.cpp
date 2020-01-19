@@ -10,7 +10,7 @@ void GameBoard::draw() {
 }
 
 
-//very similiar to deck of cards / poker project
+//very similar to deck of cards / poker project
 void GameBoard::populate() {
     //9 is bomb
     //0-8 is going to be number of adjacent bombs
@@ -91,11 +91,6 @@ void GameBoard::visualArrayBuild(sf::Texture &_texture) {
 
 bool GameBoard::gameWin() {
     return tilesRevealed == rows * columns - totalBombs;
-}
-
-
-int GameBoard::bombsLeft() {
-    return totalBombs - flagsPlaced;
 }
 
 
