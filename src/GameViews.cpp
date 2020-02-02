@@ -7,11 +7,11 @@
 #include "GameViews.hpp"
 
 /** This is the main Game "View" that exists in the game. called from the main menu view**/
-void createGameView(int Rows, int Columns, int NumBombs) {
+void createGameView(int rows, int columns, int numBombs) {
     srand(static_cast<unsigned int>(time(NULL)));
 
     //set the number of pixels for one sprite square and the filepath we will be working with.
-    int SPRITE_SQUARE_SIZE = 32;
+    static const int SPRITE_SQUARE_SIZE = 32;
     std::string filePath = "tiles.png";
 
     //create a texture for blank square sprite and load it from file.
@@ -38,7 +38,7 @@ void createGameView(int Rows, int Columns, int NumBombs) {
     // create the window
     sf::RenderWindow window(sf::VideoMode(320, 320), "MineSweeper", sf::Style::Close | sf::Style::Resize);
     //initialize a gameBoard with a given size texture;
-    GameBoard gameBoard = GameBoard(Rows, Columns, NumBombs, unClickedSquareTexture, window);
+    GameBoard gameBoard = GameBoard(rows, columns, numBombs, unClickedSquareTexture, window);
 
     window.create(sf::VideoMode(static_cast<unsigned int>(32 * gameBoard.getRows()), static_cast<unsigned int>(32 * gameBoard.getColumns())), "MineSweeper", sf::Style::Close | sf::Style::Resize);
 
@@ -77,7 +77,7 @@ void createGameView(int Rows, int Columns, int NumBombs) {
                         case static_cast<TileInfo>(0):
 
                             tempTile.getSprite().setTexture(blankSquareTexture);
-                            tempTile.revealSurroundingBlanks(x, y, Rows, Columns, tileTextures, gameBoard.tiles, gameBoard.tilesRevealed);
+                            tempTile.revealSurroundingBlanks(x, y, rows, columns, tileTextures, gameBoard.tiles, gameBoard.tilesRevealed);
 
                             break;
                         case static_cast<TileInfo>(1):
@@ -178,14 +178,11 @@ void createMainMenu() {
     window.setVerticalSyncEnabled(true);
     window.setFramerateLimit(30);
     while (window.isOpen()) {
-        // clear the window with black color
         window.clear();
         menu.draw(window);
 
-        // check all the window's events that were triggered since the last iteration of the loop
         sf::Event event;
         while (window.pollEvent(event)) {
-            // "close requested" event: we close the window
             if (event.type == sf::Event::Closed) {
                 window.close();
             }
@@ -231,18 +228,13 @@ void createDifficultySelector() {
     window.setVerticalSyncEnabled(true);
     window.setFramerateLimit(30);
 
-
     while (window.isOpen()) {
-        // check all the window's events that were triggered since the last iteration of the loop
-
-        // clear the window with black color
 
         window.clear();
         menu.draw(window);
 
         sf::Event event;
         while (window.pollEvent(event)) {
-            // "close requested" event: we close the window
             if (event.type == sf::Event::Closed) {
                 window.close();
             }
@@ -282,11 +274,14 @@ void createDifficultySelector() {
     }
 }
 
-/**Creates a screen of winning or loosing.**/
-void createWinLoseScreen(std::string Result) {
+/**
+ * Creates a screen of winning or loosing
+ * @param result 
+ */
+void createWinLoseScreen(std::string result) {
     sf::RenderWindow window(sf::VideoMode(500, 500), "MineSweeper", sf::Style::Close | sf::Style::Resize);
 
-    WinOrLoseScreen menu = WinOrLoseScreen(500, 500, Result);
+    WinOrLoseScreen menu = WinOrLoseScreen(500, 500, result);
     window.create((sf::VideoMode(500, 500)), "MineSweeper", sf::Style::Close | sf::Style::Resize);
     window.setVerticalSyncEnabled(true);
     window.setFramerateLimit(30);
@@ -294,15 +289,11 @@ void createWinLoseScreen(std::string Result) {
 
     while (window.isOpen()) {
 
-        // clear the window with black color
-
         window.clear();
         menu.draw(window);
 
-        // check all the window's events that were triggered since the last iteration of the loop
         sf::Event event;
         while (window.pollEvent(event)) {
-            // "close requested" event: we close the window
             if (event.type == sf::Event::Closed) {
                 window.close();
             }

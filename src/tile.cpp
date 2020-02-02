@@ -2,14 +2,11 @@
 
 void Tile::reveal() {
     isRevealed = true;
-
 }
 
 void Tile::flag() {
     isFlagged = true;
-
 }
-
 
 /**
  * reveal all the blanks that are touching each other, Recursive algorithm.
@@ -66,14 +63,8 @@ void Tile::revealSurroundingBlanks(int x, int y, int Rows, int Columns, std::vec
             } else if (temp.tileInfo == EIGHT) {
                 temp.getSprite().setTexture(textures[9]);
                 tilesRevealed++;
-            } else {
-                return;
             }
-
         }
-
-    } else {
-        return;
     }
 }
     

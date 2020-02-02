@@ -3,7 +3,6 @@
 
 DifficultySelector::DifficultySelector(float width, float height) {
     if (!font.loadFromFile("menuFont.ttf")) {
-        //handle error
         std::cout << "couldn't load your font";
     }
     menu[0].setFont(font);

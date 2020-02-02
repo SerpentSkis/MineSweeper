@@ -2,9 +2,7 @@
 #include "WinOrLoseScreen.hpp"
 
 WinOrLoseScreen::WinOrLoseScreen(float width, float height, std::string result) {
-    //TODO win condition is buggy.
     if (!font.loadFromFile("menuFont.ttf")) {
-        //handle error
         std::cout << "couldn't load your font";
     }
     menu[0].setFont(font);
@@ -25,7 +23,6 @@ WinOrLoseScreen::WinOrLoseScreen(float width, float height, std::string result) 
     menu[2].setPosition(static_cast<float>(width / 2.7), height / (MAX_NUMBER_OF_ITEMS_END + 1) * 3);
 
     selectedItemIndex = 0;
-
 }
 
 

@@ -20,7 +20,7 @@ public:
         totalBombs = _totalBombs;
 
         // fill in data vector.
-        populate();
+        placeBombs();
         visualArrayBuild(_texture);
 
 
@@ -33,13 +33,12 @@ public:
 
 
     void draw(); ///draw the tiles to the screen.
-    void populate();
+    void placeBombs();
 
-    void shuffle();
 
-    void adjacentBombsPopulate();
+    void placeNumbers();
 
-    void visualArrayBuild(sf::Texture &_texture);
+    void visualArrayBuild(sf::Texture &texture);
 
     bool gameWin();  //  tilesRevealed == rows*columns-totalBombs;
 

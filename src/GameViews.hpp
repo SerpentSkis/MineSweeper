@@ -8,4 +8,4 @@ void createMainMenu();
 
 void createDifficultySelector();
 
-void createWinLoseScreen(std::string Result);
+void createWinLoseScreen(std::string result);
